@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This simple Rails 5 app is used to validate that Rubocop linting doesn't work with
+Bootsnap when `compile_cache_iseq` is enabled.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To run Rubocop:
+ 
+```
+docker-compose run web rubocop -ld /app/controllers/application_controller.rb
+```
