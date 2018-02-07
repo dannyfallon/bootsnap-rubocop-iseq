@@ -6,5 +6,5 @@ Bootsnap when `compile_cache_iseq` is enabled.
 To run Rubocop:
  
 ```
-docker-compose run web rubocop -ld /app/controllers/application_controller.rb
+docker-compose run web rubocop -ld app/controllers/application_controller.rb
 ```
